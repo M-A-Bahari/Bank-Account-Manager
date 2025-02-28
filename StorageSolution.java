@@ -1,3 +1,4 @@
+@author Hassan Afzaal | Naz Karaman
 import java.io.*;
 import java.util.Scanner;
 
