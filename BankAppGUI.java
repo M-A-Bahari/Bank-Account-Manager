@@ -1,48 +1,45 @@
+//@author Hassan Afzaal
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
+import java.io.*;
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.HashMap;
+import java.util.UUID;
 
-public class BankAppGUI extends Application {
-    private double balance = 1000.00; // Sample balance
+public class BankGUI extends Application {
+    private static final String FILE_NAME = "accounts.txt";
+    private static HashMap<String, String> users = new HashMap<>();
+    private static HashMap<String, Double[]> balances = new HashMap<>();
+    private static HashMap<String, String> userIDs = new HashMap<>();
+    
+
+    private Stage window;
+    private Scene loginScene, registerScene, mainBankingScene, transferScene, historyScene;
+    private String loggedInUser;
     private Label balanceLabel;
+    private Label fullNameLabel;
+    private Label usernameLabel;
 
-    @Override
-    public void start(Stage primaryStage) {
-        balanceLabel = new Label("Current Balance: $" + balance);
-
-        Button depositButton = new Button("Deposit $100");
-        depositButton.setOnAction(e -> deposit(100));
-
-        Button withdrawButton = new Button("Withdraw $50");
-        withdrawButton.setOnAction(e -> withdraw(50));
-
-        VBox layout = new VBox(10);
-        layout.getChildren().addAll(balanceLabel, depositButton, withdrawButton);
-
-        Scene scene = new Scene(layout, 300, 200);
-        primaryStage.setTitle("Bank Account Manager");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
-
-    private void deposit(double amount) {
-        balance += amount;
-        balanceLabel.setText("Current Balance: $" + balance);
-    }
-
-    private void withdraw(double amount) {
-        if (balance >= amount) {
-            balance -= amount;
-            balanceLabel.setText("Current Balance: $" + balance);
-        } else {
-            balanceLabel.setText("Insufficient funds!");
-        }
-    }
+    
+    private TextField usernameInput;
+    private PasswordField passwordInput;
 
     public static void main(String[] args) {
+        loadAccounts();
         launch(args);
     }
+    
+	private static void saveAccount(String userId, String firstName, String lastName, String username, String password, double balance) {
+    	try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
+        	writer.write(userId + "," + firstName + "," + lastName + "," + username + "," + password + "," + balance);
+        	writer.newLine();
+    	} catch (IOException e) {
+        	e.printStackTrace();
+    	}
+	}
 }
