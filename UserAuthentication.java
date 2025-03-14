@@ -1,4 +1,8 @@
-@author Md Ataullah Bahari
+/**
+ * This class handles user authentication, including login and registration.
+ * @author Md Ataullah Bahari
+ * @co-author Hassan Afzaal
+ */
 import java.io.*;
 import java.time.LocalDate;
 import java.time.Period;
