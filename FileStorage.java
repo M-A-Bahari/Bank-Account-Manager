@@ -1,4 +1,6 @@
-@author Hassan Afzaal | Naz Karaman
+@author Yashasvi
+//This file allow users to add their account name and balance
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -16,7 +18,7 @@ public class FileStorage {
         System.out.println("Saved account to file!");
         scanner.close();
     }
-
+    //@author Hassan Afzaal
     private static void saveAccountToFile(String name, double balance) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
             writer.write(name + "," + balance);
