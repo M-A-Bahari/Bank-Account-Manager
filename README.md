@@ -78,3 +78,11 @@ In your persoanl have account you have two types (e.g., savings, chequing), you 
 1. Unit Tests: The project includes unit tests for validating core functionalities like deposit, withdrawal, account creation, and login.
 2. Integration Tests: The full system has been tested to ensure all components work together properly, including file I/O, backend operations, and GUI interactions.
 3. Edge Cases: Various edge cases, including invalid inputs, negative balances, and transaction limits, have been tested to ensure robustness.
+
+**Team Member**
+1. Hassan Afzaal (Manager)
+2. Md Ataullah Bahari (Documentation lead)
+3. Naz Karaman (Tech Lead)
+4. Yashasvi (Support Role)
+
+
