@@ -1,0 +1,122 @@
+
+/* General Styling */
+.root {
+    -fx-background-color: #f0f4f7;  /* Soft background color */
+    -fx-font-family: "Arial", sans-serif;
+}
+
+/* Styling for Savings Balance Label */
+.savings-balance-label {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2E3A59; /* Darker color for better visibility */
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+/* Styling for Login Labels (Username, Password) */
+.login-label {
+    -fx-font-size: 18px;  /* Larger font size */
+    -fx-font-weight: bold;  /* Make the font bold */
+    -fx-text-fill: #2E3A59;  /* Darker color for better visibility */
+    -fx-padding: 8px;
+}
+
+
+/* Login Scene Background Image */
+.login-background {
+    -fx-background-image: url("inline-virtualbackground3.jpg");  /* Ensure the correct path */
+    -fx-background-size: cover;  /* Make the image cover the whole area */
+    -fx-background-position: center center;  /* Center the image */
+    -fx-background-repeat: no-repeat;  /* Prevent image repeat */
+}
+
+/* Styling for Welcome Label */
+.welcome-label {
+    -fx-font-size: 28px;  /* Increase font size */
+    -fx-font-weight: bold;  /* Make the font bold */
+    -fx-text-fill: #2E3A59;  /* Dark color for better visibility */
+    -fx-padding: 10px;
+}
+
+/* Styling for Balance Labels (Chequing and Savings) */
+.balance-label {
+    -fx-font-size: 19px;  /* Increase font size */
+    -fx-font-weight: bold;  /* Make the font bold */
+    -fx-text-fill: #2E3A59;  /* Dark color for better visibility */
+    -fx-padding: 8px;
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #4CAF50;  /* Green color for buttons */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px;
+    -fx-padding: 12px 24px;
+    -fx-font-size: 16px;
+    -fx-effect: dropshadow(gaussian, #888, 5, 0.5, 0, 0);
+    -fx-min-width: 200px;  /* Ensure buttons are wide */
+}
+
+.button:hover {
+    -fx-background-color: #45a049;  /* Darker green when hovered */
+}
+
+.button:pressed {
+    -fx-background-color: #3e8e41;  /* Darker when pressed */
+}
+
+/* Button for Back to Main */
+.button.back-to-main {
+    -fx-background-color: #f44336;  /* Red color for "Back" button */
+}
+
+.button.back-to-main:hover {
+    -fx-background-color: #d32f2f;
+}
+
+/* Layout Enhancements */
+.vbox {
+    -fx-spacing: 20px;  /* Space between elements */
+    -fx-alignment: center;
+    -fx-padding: 20px;
+}
+
+/* HBox (Horizontal Layout) for buttons */
+.hbox {
+    -fx-spacing: 15px;  /* Space between horizontal elements */
+    -fx-alignment: center;
+}
+
+/* Padding and alignment for buttons */
+.button-container {
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+}
+
+/* Shadow effect for containers */
+.scene-container {
+    -fx-background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 0);
+}
+
+/* Styling for the background image */
+.background {
+    -fx-background-image: url("inline-virtualbackground3.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+/* Styling the text field */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+    -fx-font-size: 16px;
+    -fx-pref-width: 250px;
+    -fx-effect: dropshadow(gaussian, #888, 5, 0.5, 0, 0);
+}
