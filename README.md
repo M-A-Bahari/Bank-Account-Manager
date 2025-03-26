@@ -83,6 +83,6 @@ In your persoanl have account you have two types (e.g., savings, chequing), you 
 1. Hassan Afzaal (Manager)
 2. Md Ataullah Bahari (Documentation lead)
 3. Naz Karaman (Tech Lead)
-4. Yashasvi (Support Role)
+4. Yashasvi (Project Facilitator)
 
 
