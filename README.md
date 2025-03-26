@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b163bc8398fbaa99e383fb43cb1c3a2d642a7ae5
 # Team-5
 
 **Bank Account Manager - CS2043 Team 13 Project**
@@ -85,8 +88,8 @@ In your persoanl have account you have two types (e.g., savings, chequing), you 
 1. Hassan Afzaal (Manager)
 2. Md Ataullah Bahari (Documentation lead)
 3. Naz Karaman (Tech Lead)
-<<<<<<< HEAD
 4. Yashasvi (Project Facilitator)
+<<<<<<< HEAD
 =======
 4. Yashasvi (Project Facilitator & Support Role)
 >>>>>>> origin/spike-user-authentication
@@ -118,3 +121,5 @@ text file (if simple, single-user).
 Jira Access:
 https://team5cs2043.atlassian.net/jira/software/projects/SCRUM/boards/1
 >>>>>>> spike-file-storage
+=======
+>>>>>>> b163bc8398fbaa99e383fb43cb1c3a2d642a7ae5
