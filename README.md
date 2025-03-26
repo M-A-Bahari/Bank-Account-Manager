@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Team-5
 
 **Bank Account Manager - CS2043 Team 13 Project**
