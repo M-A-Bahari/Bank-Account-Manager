@@ -1,100 +1,24 @@
-<<<<<<< HEAD
-# Team-5
+## UserAuthentication.java Overview
 
-**Bank Account Manager - CS2043 Team 13 Project**
+The `UserAuthentication.java` class is responsible for handling user-related operations, including registration, login, and account management. It interacts with the `BankAccount` and `User` classes to provide a smooth banking experience. This class stores user credentials, manages account data, and handles account termination and updates.
 
-**Project Overview**
+### Key Features
 
-The Bank Account Manager is a simple banking application that allows users to:
-1. Create accounts (with basic age verification).
-2. Log in to their accounts securely.
-3. Deposit, withdraw, and transfer money between accounts.
-4. Manage multiple account types like chequing and savings.
-5. View transaction history.
-6. Handle negative balances and maintain secure account operations.
+1. **Initialize**: Loads existing user accounts from a file (`accounts.txt`), which contains user credentials, account balances, and personal details.
+2. **Register**: Registers a new user by creating a user account with provided details such as username, password, first name, last name, date of birth, and an initial balance.
+3. **Login**: Authenticates a user by verifying their username and password. If the login is successful, the corresponding user account and details are loaded into memory.
+4. **Terminate Account**: Allows users to terminate their accounts by removing them from the stored accounts file (`accounts.txt`).
+5. **Get Account/User Information**: Retrieves the `BankAccount` and `User` objects associated with a specific username.
+6. **Account Existence Check**: Verifies if a user already exists in the system by checking the stored credentials.
+7. **Update Accounts**: Updates all stored accounts (credentials, bank accounts, and user details) to ensure synchronization across sessions.
 
-**Features**
+### File Structure
+- **accounts.txt**: A file used to store user account details, including username, password (hashed), account balances, and personal information. This file is read and updated whenever a user registers, logs in, or terminates their account.
 
-**Primary Use Cases:**
+### How it Works
 
-1. Account Creation: Allows users to create an account by entering their name, age, username, password, and starting balance.
-2. Login: Validates the username and password to allow users to access their accounts.
-3. Deposit: Users can deposit money into their chequing account.
-4. Withdraw: Allows users to withdraw money from their chequing account (with balance check).
-5. Transfer: Enables users to transfer money between their chequing and savings accounts.
+- **Registration**: When a new user registers, their details are saved to `accounts.txt` through the `FileStorage` class.
+- **Login**: The login process verifies the user's credentials by checking against the stored data. If successful, the user is granted access to their bank account.
+- **Termination**: If a user wishes to terminate their account, their entry in the `accounts.txt` file is deleted.
 
-**Secondary Use Cases:**
-
-1. Transaction History: View the last 5 transactions for the logged-in user.
-2. Handle Negative Balances: The system manages overdraft situations and handles negative balances when withdrawing more than the available funds.
-3. Account Termination: Users can close their accounts and delete their information from the system.
-
-**Additional Features:**
-1. Input and Output GUI: The system includes a graphical user interface for user interactions and displays account information.
-2. Account Switching: Users can switch between multiple account types (e.g., savings, chequing).
-
-
-**Installation**
-
-**Requirements:**
-1. Java 11 or later
-2. JavaFX (for GUI)
-3. Eclipse, or any Java-compatible editor
-
-**Steps to Run:**
-
-1. Clone the repository:
-2. git clone <repository_url>
-
-**Navigate to the project directory:**
-1. cd BankAccountManager
-2. Compile the project (if necessary):
-3. javac *.java
-
-**Run the application:**
-java BankGUI
-
-**How to Use**
-
-**Login/Register:**
-
-To use the system, start by either registering a new account or logging in with an existing one.
-1. Registration: You need to provide a username, password, date of birth (minimum age 16), and an initial balance.
-2. Login: Enter your username and password to access your account.
-
-**Performing Transactions:**
-After logging in, you can perform the following actions:
-1. Deposit: Deposit money into your account.
-2. Withdraw: Withdraw money (ensure sufficient balance).
-3. Transfer: Transfer money between accounts.
-
-**Viewing Transaction History:**
-Click on the Transaction History button to view the last 5 transactions made on your account.
-
-**Switch Account Types:**
-In your persoanl have account you have two types (e.g., savings, chequing), you can switch between them using the Switch Account feature.
-
-**Testing**
-
-1. Unit Tests: The project includes unit tests for validating core functionalities like deposit, withdrawal, account creation, and login.
-2. Integration Tests: The full system has been tested to ensure all components work together properly, including file I/O, backend operations, and GUI interactions.
-3. Edge Cases: Various edge cases, including invalid inputs, negative balances, and transaction limits, have been tested to ensure robustness.
-
-**Team Member**
-1. Hassan Afzaal (Manager)
-2. Md Ataullah Bahari (Documentation lead)
-3. Naz Karaman (Tech Lead)
-4. Yashasvi (Project Facilitator & Support Role)
-
-
-=======
-Overview:
-This project implements a User Authentication System in Java, featuring user registration and login functionalities. It securely handles user credentials and ensures proper authentication mechanisms.
-
-Features:
-(1) User Registration: Users can create an account with a username and password.
-(2) User Login: Users can log in using their credentials.
-(3) Password Hashing: Ensures security using hashing techniques.(This is/ will be implemented on the FileStorage.java class)
-(4) Error Handling: Provides meaningful error messages for invalid credentials.
-(5) File-Based Storage (Optional): Users' credentials can be stored in a file/database.(We are using file based storage)
->>>>>>> 1a94cb949350f7019ab99e9cd5d8756ebd9a6431
+This class is integral to user management and ensures secure login, account access, and account management.
