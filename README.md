@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b163bc8398fbaa99e383fb43cb1c3a2d642a7ae5
 # Team-5
 
 **Bank Account Manager - CS2043 Team 13 Project**
@@ -89,37 +84,3 @@ In your persoanl have account you have two types (e.g., savings, chequing), you 
 2. Md Ataullah Bahari (Documentation lead)
 3. Naz Karaman (Tech Lead)
 4. Yashasvi (Project Facilitator)
-<<<<<<< HEAD
-=======
-4. Yashasvi (Project Facilitator & Support Role)
->>>>>>> origin/spike-user-authentication
-
-
-=======
-Overview:
-This project implements a User Authentication System in Java, featuring user registration and login functionalities. It securely handles user credentials and ensures proper authentication mechanisms.
-
-Features:
-(1) User Registration: Users can create an account with a username and password.
-(2) User Login: Users can log in using their credentials.
-(3) Password Hashing: Ensures security using hashing techniques.(This is/ will be implemented on the FileStorage.java class)
-(4) Error Handling: Provides meaningful error messages for invalid credentials.
-(5) File-Based Storage (Optional): Users' credentials can be stored in a file/database.(We are using file based storage)
->>>>>>> 1a94cb949350f7019ab99e9cd5d8756ebd9a6431
-=======
-# Team-5
-Spike 4: Storage Solution (Database vs. File)
-Spike Owners: Hassan
-Spike Branch Name: spike-storage
-Goals:
-Test  file-based storage for saving user data.
-Implement basic read/write operations.
-Ensure data persists between sessions.
-Outcome:
-text file (if simple, single-user).
-
-Jira Access:
-https://team5cs2043.atlassian.net/jira/software/projects/SCRUM/boards/1
->>>>>>> spike-file-storage
-=======
->>>>>>> b163bc8398fbaa99e383fb43cb1c3a2d642a7ae5
