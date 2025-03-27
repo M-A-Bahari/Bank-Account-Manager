@@ -1,28 +1,32 @@
+<<<<<<< HEAD
 # Team-5
 <<<<<<< HEAD
+=======
+## UserAuthentication.java Overview
+>>>>>>> spike-user-authentication
 
-**Bank Account Manager - CS2043 Team 13 Project**
+The `UserAuthentication.java` class is responsible for handling user-related operations, including registration, login, and account management. It interacts with the `BankAccount` and `User` classes to provide a smooth banking experience. This class stores user credentials, manages account data, and handles account termination and updates.
 
-**Project Overview**
+### Key Features
 
-The Bank Account Manager is a simple banking application that allows users to:
-1. Create accounts (with basic age verification).
-2. Log in to their accounts securely.
-3. Deposit, withdraw, and transfer money between accounts.
-4. Manage multiple account types like chequing and savings.
-5. View transaction history.
-6. Handle negative balances and maintain secure account operations.
+1. **Initialize**: Loads existing user accounts from a file (`accounts.txt`), which contains user credentials, account balances, and personal details.
+2. **Register**: Registers a new user by creating a user account with provided details such as username, password, first name, last name, date of birth, and an initial balance.
+3. **Login**: Authenticates a user by verifying their username and password. If the login is successful, the corresponding user account and details are loaded into memory.
+4. **Terminate Account**: Allows users to terminate their accounts by removing them from the stored accounts file (`accounts.txt`).
+5. **Get Account/User Information**: Retrieves the `BankAccount` and `User` objects associated with a specific username.
+6. **Account Existence Check**: Verifies if a user already exists in the system by checking the stored credentials.
+7. **Update Accounts**: Updates all stored accounts (credentials, bank accounts, and user details) to ensure synchronization across sessions.
 
-**Features**
+### File Structure
+- **accounts.txt**: A file used to store user account details, including username, password (hashed), account balances, and personal information. This file is read and updated whenever a user registers, logs in, or terminates their account.
 
-**Primary Use Cases:**
+### How it Works
 
-1. Account Creation: Allows users to create an account by entering their name, age, username, password, and starting balance.
-2. Login: Validates the username and password to allow users to access their accounts.
-3. Deposit: Users can deposit money into their chequing account.
-4. Withdraw: Allows users to withdraw money from their chequing account (with balance check).
-5. Transfer: Enables users to transfer money between their chequing and savings accounts.
+- **Registration**: When a new user registers, their details are saved to `accounts.txt` through the `FileStorage` class.
+- **Login**: The login process verifies the user's credentials by checking against the stored data. If successful, the user is granted access to their bank account.
+- **Termination**: If a user wishes to terminate their account, their entry in the `accounts.txt` file is deleted.
 
+<<<<<<< HEAD
 **Secondary Use Cases:**
 
 1. Transaction History: View the last 5 transactions for the logged-in user.
@@ -127,3 +131,6 @@ The `BankGUI.java` file contains the main code for the GUI and functionality of 
 ## Styling
 The project uses external CSS to style the user interface. The CSS file is applied to the various scenes, providing a consistent look and feel.
 >>>>>>> spike-bank-gui
+=======
+This class is integral to user management and ensures secure login, account access, and account management.
+>>>>>>> spike-user-authentication
