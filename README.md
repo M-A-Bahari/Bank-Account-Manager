@@ -1,4 +1,4 @@
-# T13 Bank Account Manager
+# Bank Account Manager
 
 ## Overview
 
