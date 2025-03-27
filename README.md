@@ -14,12 +14,11 @@ T13 Bank Account Manager is an online banking application that allows users to p
   - **Withdraw**: Users can withdraw money from their chequing account with sufficient balance.
   - **Transfers**: Users can transfer funds between chequing and savings accounts.
   - **Send Money**: Users can send money to other users' accounts.
-- **Multiple Accounts**: Users can manage multiple accounts (e.g., savings, chequing, etc.), with each having different withdrawal limits.
+- **Multiple Accounts**: Users can manage multiple accounts (e.g., savings, chequing, etc.).
 - **Transaction History**: Users can view a history of up to 5 previous transactions.
 - **Account Termination**: Users have the option to close their accounts.
 
 ### Secondary Features
-- **Mobile Interface**: The app's interface allows users to manage their accounts efficiently.
 - **Handle Negative Balances**: If a user attempts to withdraw more than their balance, the transaction is blocked.
 - **Transaction Logging**: Every banking transaction is logged and can be reviewed in the transaction history.
   
