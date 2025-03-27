@@ -2,7 +2,7 @@
 
 ## Overview
 
-T13 Bank Account Manager is an online banking application that allows users to perform basic banking operations such as depositing, withdrawing, transferring money between accounts, and making purchases. The application supports multiple types of accounts, including savings, chequing, interest, and student accounts. The user interface (GUI) provides an intuitive way for users to navigate their account(s), view balances, and interact with banking operations.
+Bank Account Manager is an online banking application that allows users to perform basic banking operations such as depositing, withdrawing, transferring money between accounts, and making purchases. The application supports multiple types of accounts, including savings, chequing, interest, and student accounts. The user interface (GUI) provides an intuitive way for users to navigate their account(s), view balances, and interact with banking operations.
 
 ## Features
 
