@@ -1,9 +1,28 @@
-//@author Md Ataullah Bahari & Hassan Afzaal
+/**
+ * UserAuthentication.java
+ *
+ * This class manages user authentication and account lifecycle operations
+ * for the Bank Account Manager application. It is responsible for:
+ *  - Registering new users
+ *  - Authenticating user logins
+ *  - Loading and persisting user/account data
+ *  - Terminating user accounts
+ *
+ * Authors:
+ *  - Md Ataullah Bahari
+ *      * Account initialization logic
+ *      * User registration and login flow
+ *      * In-memory data management
+ *
+ *  - Hassan Afzaal
+ *      * Account termination functionality
+ *      * File rewrite logic for account deletion
+ */
 import java.io.*;
-import java.util.HashMap;
-import java.util.UUID;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.UUID;
 
 
 public class UserAuthentication {
