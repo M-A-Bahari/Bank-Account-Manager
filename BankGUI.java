@@ -9,12 +9,10 @@
  * - Savings Management
  * - Fund Transfer
  * - Transaction History
- *
  * Built with modular scene setup for easy navigation and styling.
  * 
- * @AUTHOR HASSAN AFZAAL (MAINLY DONE BY HASSAN)
- *
- * @Support Provided by (Md Ataullah Bahari)
+ * @author Md Ataullah Bahari
+ * @author HASSAN AFZAAL
  */
 import javafx.application.Application;
 import javafx.geometry.Insets;

@@ -1,8 +1,8 @@
 /**
  * Secondary Test Cases
  *
- * @author Hassan Afzaal (helped in making the file)
- * @Naz Karaman
+ * @author Hassan Afzaal
+ * @author Naz Karaman
  */
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
