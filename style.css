@@ -1,5 +1,13 @@
+/**
+ * Application UI Styling (JavaFX CSS)
+ *
+ * This stylesheet defines the visual appearance of the Bank Account Manager
+ * application. It provides consistent styling for layouts, labels, buttons,
+ * input fields, and background elements used throughout the JavaFX GUI.
+ *
+ * @author Md Ataullah Bahari
+ */
 
-/* General Styling */
 .root {
     -fx-background-color: #f0f4f7;  /* Soft background color */
     -fx-font-family: "Arial", sans-serif;
